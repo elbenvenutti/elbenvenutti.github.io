@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Isma Pérez</title>
+    <link>https://elbenvenutti.github.io/post/</link>
+    <description>Recent content in Posts on Isma Pérez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <managingEditor>pb.ismael@gmail.com</managingEditor>
+    <webMaster>pb.ismael@gmail.com</webMaster>
+    <copyright>©2016 Isma Perez</copyright>
+    <lastBuildDate>Fri, 23 Sep 2016 17:30:31 +0100</lastBuildDate>
+    <atom:link href="https://elbenvenutti.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building a website (this one) with Hugo (I)</title>
+      <link>https://elbenvenutti.github.io/2016/09/23/building-website-with-hugo/</link>
+      <pubDate>Fri, 23 Sep 2016 17:30:31 +0100</pubDate>
+      <author>pb.ismael@gmail.com</author>
+      <guid>https://elbenvenutti.github.io/2016/09/23/building-website-with-hugo/</guid>
+      <description>
+
+&lt;p&gt;I did my first personal website back in 1997.
+Yes, back in the days of animated gifs and iframes. PHP was next, and I even started using it at work too.
+CMSs came after, and I wrote some Drupal modules for many of my customers.
+But I was barely using the Content Management features of the thing itself.
+Most content was static (hardly ever changed) and then some custom modules.
+Not exactly what a CMS should be used for.&lt;/p&gt;
+
+&lt;p&gt;So I didn&amp;rsquo;t want to use Wordpress, Drupal or any other CMS for building this site.
+I am an advocate of using &lt;em&gt;the simplest thing that does the job&lt;/em&gt;, and it&amp;rsquo;s time to practice what I preach.&lt;/p&gt;
+
+&lt;p&gt;I googled a bit about the subject, found &lt;a href=&#34;https://www.staticgen.com/&#34;&gt;many alternatives&lt;/a&gt; and chose &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.
+Why? Easy to install, well documented, can be an excuse for learning go and &lt;em&gt;does what it says on the tin&lt;/em&gt;.
+In fact, at the time of writing this paragraph I have not even chosen a theme, so I cannot even preview my changes.
+Went to the site, read the &lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;quickstart guide&lt;/a&gt;, did a couple of quick and dirty local tests, and started setting up things.&lt;/p&gt;
+
+&lt;p&gt;This is how I made this site &lt;em&gt;happen&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;let-s-get-started&#34;&gt;Let&amp;rsquo;s get started!&lt;/h2&gt;
+
+&lt;p&gt;Installing Hugo on OsX is as easy as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;brew update &amp;amp;&amp;amp; brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s create a the site structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo new site my-new-site
+cd my-new-site
+hugo new post/build-a-site-with-hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This has created a basic hugo site structure, and then our first piece of content. This blog post.
+It is a markdown file under &lt;code&gt;content/post/build-this-site.md&lt;/code&gt;.
+Next thing is to edit it with my favourite text editor (vim) and append some content to the bottom of the file.&lt;/p&gt;
+
+&lt;p&gt;Hugo does not ship with a default theme, so now  I need a theme
+While I could build one from scratch, I would really like to have something that &lt;em&gt;looks good&lt;/em&gt;.
+Not to mention that my &lt;em&gt;designer abilities&lt;/em&gt; are way worse than my coding skills.
+I headed to the themes gallery, browse a bit and chose hyde-y.
+The theme&amp;rsquo;s page suggests to git clone it into your themes directory, but nesting git repos is not the best idea.
+Git submodules are a better choice in this case (note to self: write a post about git submodules):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd themes
+git submodule add https://github.com/enten/hyde-y.git
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The page documents the expected options (should go in &lt;code&gt;config.toml&lt;/code&gt;). One minute later, I am &lt;em&gt;finally&lt;/em&gt; starting my site:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo server -w --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I point my browser to [&lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;] and &lt;em&gt;voilà&lt;/em&gt;, this site is alive!&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-things-ready-for-the-interwebs&#34;&gt;Getting things ready for the interwebs&lt;/h2&gt;
+
+&lt;p&gt;I have to admit that having a web page in my HDD is neat, but quite &lt;em&gt;useless&lt;/em&gt;. Let&amp;rsquo;s make it available to the world.
+First of all, we need to &amp;lsquo;undraft&amp;rsquo; our post so that Hugo will generate it in all its glory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo undraft content/post/building-this-site.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now let&amp;rsquo;s generate all the static files that we&amp;rsquo;ll host somewhere:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All needed files are now generated under &lt;code&gt;public&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ship-it&#34;&gt;Ship it!&lt;/h2&gt;
+
+&lt;p&gt;Ok. Now we need to publish this somewhere.
+&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt; does anything I need.
+I have chosen to manage this using two repos:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/elbenvenutti/elbenvenutti-hugo&#34;&gt;Source code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/elbenvenutti/elbenvenutti.github.io&#34;&gt;Published files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My plan is to setup &lt;a href=&#34;https://travis-ci.com/&#34;&gt;travis&lt;/a&gt;, but for now it&amp;rsquo;s going to be a bit more rudimentary.&lt;/p&gt;
+
+&lt;p&gt;Again, I use a submodule to clone the published files repo under &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;rm -rf public
+git submodule add https://elbenvenutti@github.com/elbenvenutti/elbenvenutti.github.io public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And run &lt;code&gt;hugo&lt;/code&gt; again. This generates the files under &lt;code&gt;public&lt;/code&gt;, but now public is a clone of our publishing repo.
+The changes are published by committing and pushing the submodule:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cd public
+git add .
+git commit -m &amp;quot;some decent description here&amp;quot;
+git push
+cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s it. The site is now published.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

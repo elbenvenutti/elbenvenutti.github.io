@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://elbenvenutti.github.io/</loc>
+    <lastmod>2016-09-23T17:37:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elbenvenutti.github.io/about/</loc>
+    <lastmod>2016-09-23T17:37:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://elbenvenutti.github.io/2016/09/23/building-website-with-hugo/</loc>
+    <lastmod>2016-09-23T17:30:31+01:00</lastmod>
+  </url>
+  
+</urlset>

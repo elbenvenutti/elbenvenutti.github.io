@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Isma Pérez</title>
+    <link>https://elbenvenutti.github.io/tags/about/</link>
+    <description>Recent content in About on Isma Pérez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <managingEditor>pb.ismael@gmail.com</managingEditor>
+    <webMaster>pb.ismael@gmail.com</webMaster>
+    <copyright>©2016 Isma Perez</copyright>
+    <lastBuildDate>Fri, 23 Sep 2016 17:37:07 +0100</lastBuildDate>
+    <atom:link href="https://elbenvenutti.github.io/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About me</title>
+      <link>https://elbenvenutti.github.io/about/</link>
+      <pubDate>Fri, 23 Sep 2016 17:37:07 +0100</pubDate>
+      <author>pb.ismael@gmail.com</author>
+      <guid>https://elbenvenutti.github.io/about/</guid>
+      <description>&lt;p&gt;Hi!,&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m Isma.
+I have been &lt;em&gt;doing stuff with code and people&lt;/em&gt; since 1998&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:-&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:-&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;I started in this job developing apps for the &lt;a href=&#34;https://en.wikipedia.org/wiki/Pick_operating_system&#34;&gt;Pick Operating System&lt;/a&gt;, and that was the starting point of a fun story that has seen me acting as a backend developer, sysadmin and frontend developer.&lt;/p&gt;
+
+&lt;p&gt;I consider myself a software developer, but I have found myself leading projects and teams in quite complex environments, and I found joy in doing that too.&lt;/p&gt;
+
+&lt;p&gt;In the last 5 years I have been moving more and more towards front-end projects and I am currently leading the front end development team in &lt;a href=&#34;http://www.qmetric.co.uk&#34;&gt;QMetric&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:-&#34;&gt;although my first Logo programming course happened back in 1986&amp;hellip;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:-&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
