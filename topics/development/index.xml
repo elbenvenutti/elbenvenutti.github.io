@@ -26,8 +26,10 @@ But I was barely using the Content Management features of the thing itself.
 Most content was static (hardly ever changed) and then some custom modules.
 Not exactly what a CMS should be used for.&lt;/p&gt;
 
-&lt;p&gt;So I didn&amp;rsquo;t want to use Wordpress, Drupal or any other CMS for building this site.
-I am an advocate of using &lt;em&gt;the simplest thing that does the job&lt;/em&gt;, and it&amp;rsquo;s time to practice what I preach.&lt;/p&gt;
+&lt;p&gt;Then I learnt about Ruby on Rails, and found an amazing framework for developing web apps. I coded a few static pages and I was in the opposite situation.&lt;/p&gt;
+
+&lt;p&gt;So I didn&amp;rsquo;t want to use Wordpress, Drupal or any other CMS for building this simple site, and I have been reading about &lt;em&gt;static site generators&lt;/em&gt; and the concept sounded really interesting.
+I am an advocate of using &lt;em&gt;the right tool for the job&lt;/em&gt;, and it&amp;rsquo;s time to practice what I preach.&lt;/p&gt;
 
 &lt;p&gt;I googled a bit about the subject, found &lt;a href=&#34;https://www.staticgen.com/&#34;&gt;many alternatives&lt;/a&gt; and chose &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.
 Why? Easy to install, well documented, can be an excuse for learning go and &lt;em&gt;does what it says on the tin&lt;/em&gt;.
@@ -52,11 +54,11 @@ hugo new post/build-a-site-with-hugo
 
 &lt;p&gt;This has created a basic hugo site structure, and then our first piece of content. This blog post.
 It is a markdown file under &lt;code&gt;content/post/build-this-site.md&lt;/code&gt;.
-Next thing is to edit it with my favourite text editor (vim) and append some content to the bottom of the file.&lt;/p&gt;
+Next thing is to edit it with my text editor and append some content to the bottom of the file.&lt;/p&gt;
 
 &lt;p&gt;Hugo does not ship with a default theme, so now  I need a theme
-While I could build one from scratch, I would really like to have something that &lt;em&gt;looks good&lt;/em&gt;.
-Not to mention that my &lt;em&gt;designer abilities&lt;/em&gt; are way worse than my coding skills.
+While I could build one from scratch, a ready made theme will spare me some hours and will make me able to publish the site sooner.
+Not to mention that having something that &lt;em&gt;looks good&lt;/em&gt; is a plus.
 I headed to the themes gallery, browse a bit and chose hyde-y.
 The theme&amp;rsquo;s page suggests to git clone it into your themes directory, but nesting git repos is not the best idea.
 Git submodules are a better choice in this case (note to self: write a post about git submodules):&lt;/p&gt;

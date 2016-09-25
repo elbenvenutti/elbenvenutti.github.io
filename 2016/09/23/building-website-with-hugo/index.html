@@ -57,7 +57,7 @@
     },
     "datePublished": "2016-09-23",
     "description": "",
-    "wordCount":  614 
+    "wordCount":  663 
   }
 </script>
 
@@ -176,8 +176,8 @@
   
     &middot; by Isma
   
-  &middot; Read in about 3 min
-  &middot; (614 Words)
+  &middot; Read in about 4 min
+  &middot; (663 Words)
   <br>
   
 <a class="label" href="https://elbenvenutti.github.io/tags/website">website</a>
@@ -200,8 +200,10 @@ But I was barely using the Content Management features of the thing itself.
 Most content was static (hardly ever changed) and then some custom modules.
 Not exactly what a CMS should be used for.</p>
 
-<p>So I didn&rsquo;t want to use Wordpress, Drupal or any other CMS for building this site.
-I am an advocate of using <em>the simplest thing that does the job</em>, and it&rsquo;s time to practice what I preach.</p>
+<p>Then I learnt about Ruby on Rails, and found an amazing framework for developing web apps. I coded a few static pages and I was in the opposite situation.</p>
+
+<p>So I didn&rsquo;t want to use Wordpress, Drupal or any other CMS for building this simple site, and I have been reading about <em>static site generators</em> and the concept sounded really interesting.
+I am an advocate of using <em>the right tool for the job</em>, and it&rsquo;s time to practice what I preach.</p>
 
 <p>I googled a bit about the subject, found <a href="https://www.staticgen.com/">many alternatives</a> and chose <a href="http://gohugo.io">Hugo</a>.
 Why? Easy to install, well documented, can be an excuse for learning go and <em>does what it says on the tin</em>.
@@ -226,11 +228,11 @@ hugo new post/build-a-site-with-hugo
 
 <p>This has created a basic hugo site structure, and then our first piece of content. This blog post.
 It is a markdown file under <code>content/post/build-this-site.md</code>.
-Next thing is to edit it with my favourite text editor (vim) and append some content to the bottom of the file.</p>
+Next thing is to edit it with my text editor and append some content to the bottom of the file.</p>
 
 <p>Hugo does not ship with a default theme, so now  I need a theme
-While I could build one from scratch, I would really like to have something that <em>looks good</em>.
-Not to mention that my <em>designer abilities</em> are way worse than my coding skills.
+While I could build one from scratch, a ready made theme will spare me some hours and will make me able to publish the site sooner.
+Not to mention that having something that <em>looks good</em> is a plus.
 I headed to the themes gallery, browse a bit and chose hyde-y.
 The theme&rsquo;s page suggests to git clone it into your themes directory, but nesting git repos is not the best idea.
 Git submodules are a better choice in this case (note to self: write a post about git submodules):</p>
