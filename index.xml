@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Isma Pérez</title>
-    <link>https://elbenvenutti.github.io/</link>
+    <link>https://elbenvenutti.github.io/index.xml</link>
     <description>Recent content on Isma Pérez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
